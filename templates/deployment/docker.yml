@@ -1,0 +1,5 @@
+- name: Build and Push Docker Image
+  run: |
+    docker build -t myapp:${{ github.sha }} .
+    docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASS }}
+    docker push myapp:${{ github.sha }}

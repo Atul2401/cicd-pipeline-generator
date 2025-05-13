@@ -1,0 +1,4 @@
+- name: Lint Python
+  run: |
+    pip install pylint
+    pylint src/

@@ -1,0 +1,6 @@
+{
+    "technology": "python",
+    "build_steps": ["lint", "test"],
+    "deploy_method": "docker"
+    
+  }
